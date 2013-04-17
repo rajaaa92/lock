@@ -12,24 +12,17 @@ Gem::Specification.new do |s|
   s.date = %q{2011-03-07}
   s.description = %q{Simple engine that can lock down controllers/actions with a password.  Useful for locking a new feature (or an entire site) while it is being beta tested.}
   s.email = %q{john.mcaliley@gmail.com}
-  s.extra_rdoc_files = [
-    "LICENSE.txt",
-    "README.rdoc"
-  ]
   s.files = [
     ".document",
     ".rspec",
     "Gemfile",
     "Gemfile.lock",
     "LICENSE.txt",
-    "README.rdoc",
     "Rakefile",
     "VERSION",
     "app/controllers/lock_application_controller.rb",
     "app/controllers/lock_controller.rb",
-    "app/views/lock/login.html.erb",
-    "app/views/lock/refused.html.erb",
-    "app/views/lock/unlock.html.erb",
+    "app/views/lock/login.html.haml",
     "config/routes.rb",
     "lib/generators/lock/create_password_file/USAGE",
     "lib/generators/lock/create_password_file/create_password_file_generator.rb",

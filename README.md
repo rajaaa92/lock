@@ -54,22 +54,20 @@ Unlock your app
 Override the views
 ------------------
 
-You may want to customize the views to fit your app.  The easiest way to achieve this is to create the lock views directory - /app/views/lock, and 
+You may want to customize the views to fit your app.  The easiest way to achieve this is to create the lock views directory - /app/views/lock, and
 add your own view files.  The views should be named:
 
-    /app/views/lock/refused.html.erb  #message shown to users when they access a locked page
     /app/views/lock/login.html.erb    #login form
-    /app/views/lock/unlock.html.erb   #shows a confirmation message after you unlock it
 
-If you choose to override the login page, you will need to create a form that posts to /lock/unlock and uses a password field 
-named "password".  
+If you choose to override the login page, you will need to create a form that posts to /lock/unlock and uses a password field
+named "password".
 
 By default, these views will render inside your default layout.  To create a custom layout for these files, just add /app/views/layouts/lock.html.erb
 The layout must contain a yield.
 
 Contributing to lock
 --------------------
- 
+
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
 * Fork the project

@@ -4,7 +4,7 @@ module Lock
   class CreatePasswordFileGenerator < Rails::Generators::Base
     argument :password, :type => :string
     source_root File.expand_path('../templates', __FILE__)
-    
+
     def create_password_file
       password_salt = BCrypt::Engine.generate_salt
       password_hash = BCrypt::Engine.hash_secret(password, password_salt)
