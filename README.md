@@ -1,10 +1,16 @@
-![Lock Logo](https://github.com/charlotte-ruby/lock/blob/master/logo.png?raw=true)
-
 lock
 ====
 
 A simple Rails 3 Engine that lets you lock down controllers, specific actions or an entire site with a password.  This engine is useful for locking down new features
 or your entire site in production while your app is being beta tested.  This is not a full-blown user authentication engine, nor is it intended to be.
+
+
+Forked from: https://github.com/charlotte-ruby/lock
+
+Added:
+- locking app again
+- removed unnecessary views
+
 
 Install the gem
 ---------------
@@ -65,16 +71,12 @@ named "password".
 By default, these views will render inside your default layout.  To create a custom layout for these files, just add /app/views/layouts/lock.html.erb
 The layout must contain a yield.
 
-Contributing to lock
---------------------
+Lock your app again
+-------------------
 
-* Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
-* Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
-* Fork the project
-* Start a feature/bugfix branch
-* Commit and push until you are happy with your contribution
-* Make sure to add tests for it. Patches without tests will be ignored
-* Please try not to mess with the Rakefile, version, or history.
+1. Use the lock url - /lock
+2. You will be redirected to login page
+
 
 Copyright
 ---------
