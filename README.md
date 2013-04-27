@@ -7,7 +7,7 @@ or your entire site in production while your app is being beta tested.  This is 
 
 Forked from: https://github.com/charlotte-ruby/lock
 
-Added:
+Changed:
 - locking app again
 - removed unnecessary views
 
@@ -16,10 +16,10 @@ Install the gem
 ---------------
 
 Add to your Gemfile
+
     gem "lock", git: 'git://github.com/rajaaa92/lock.git'
 
-Install with bundler
-    bundle install
+Install with bundler: bundle install
 
 Generate the password file
 --------------------------
