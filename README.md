@@ -16,7 +16,7 @@ Install the gem
 ---------------
 
 Add to your Gemfile
-    gem "lock"
+    gem "lock", git: 'git://github.com/rajaaa92/lock.git'
 
 Install with bundler
     bundle install
